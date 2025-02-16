@@ -113,7 +113,7 @@
     margin-top: 66px;
 
     > .title {
-        font-size: 64px;
+        font-size: 4rem;
         font-family: "AbhayaLibre", sans-serif;
         font-weight: 400;
         text-align: center;
@@ -123,17 +123,22 @@
     .container {
         padding: 0 17.71% 263px;
 
+
+        @media (max-width: 992px) {
+            padding: 0 11.2% 400px;
+        }
+
         .title {
             color: #956D65;
 
             &.en {
                 font-family: "AbhayaLibre", sans-serif;
                 font-weight: 400;
-                font-size: 40px;
+                font-size: 2.5rem;
                 line-height: 40px;
 
                 &.about {
-                    font-size: 45px;
+                    font-size: 2.8125rem;
                     line-height: 45px;
                     margin-bottom: 25px;
                 }
@@ -142,12 +147,12 @@
             &.zh {
                 font-family: "NotoSansTC", sans-serif;
                 font-weight: 500;
-                font-size: 22px;
+                font-size: 1.375rem;
                 line-height: 22px;
                 letter-spacing: 4.62px;
                 
                 &.name {
-                    font-size: 28px;
+                    font-size: 1.75rem;
                     line-height: 28px;
                     letter-spacing: 5.88px;
                     margin-bottom: 25px;
@@ -157,7 +162,7 @@
 
         .content {
             font-family: "NotoSansTC", sans-serif;
-            font-size: 18px;
+            font-size: 1.125rem;
             line-height: 36px;
             letter-spacing: 1.08px;
 
@@ -176,6 +181,30 @@
 
             &:first-child {
                 margin-bottom: 115px;
+
+                @media (max-width: 992px) {
+                    flex-direction: column;
+
+                    .right {
+                        order: 1;
+                    }
+
+                    .left {
+                        order: 2;
+                    }
+                }
+            }
+
+            &:first-child,
+            &:last-child {
+                @media (max-width: 992px) {
+                    flex-direction: column;
+
+                    .left,
+                    .right {
+                        width: 100%;
+                    }
+                }
             }
 
             .left {
@@ -187,8 +216,12 @@
                 width: 38.63%;
 
                 .profile-image {
-                    width: 78.02%;
                     width: 89.35%;
+
+                    @media (max-width: 992px) {
+                        width: 80%;
+                        margin: 0 10% 19px;
+                    }
                 }
             }
 

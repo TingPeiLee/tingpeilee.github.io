@@ -45,19 +45,28 @@
     z-index: 3;
     box-sizing: border-box;
 
+    @media (max-width: 992px) {
+        display: block;
+        text-align: center;
+    }
+
     .copyright-container {
+        @media (max-width: 992px) {
+            margin-bottom: 20px;
+        }
+        
         .website-title {
             margin-bottom: 25px;
             font-family: "Poppins", sans-serif;
             font-weight: 500;
-            font-size: 22px;
+            font-size: 1.375rem;
             letter-spacing: 2.42px;
         }
 
         .copyright {
             font-family: "NotoSansTC", sans-serif;
             font-weight: 400;
-            font-size: 16px;
+            font-size: 1rem;
             letter-spacing: 1.6px;
         }
     }
@@ -79,14 +88,18 @@
             }
 
             .text {
-                font-size: 20px;
+                font-size: 1.25rem;
             }
         }
 
         .email {
-            font-size: 16px;
+            font-size: 1rem;
             color: #fff;
             text-decoration: none;
+
+            @media (max-width: 992px) {
+                display: none;
+            }
         }
     }
 }

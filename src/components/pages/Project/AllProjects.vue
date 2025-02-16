@@ -57,9 +57,22 @@ const dataList = [
     width: 31.86%;
     margin: 0 2.21% 80px 0;
     cursor: pointer;
-
+    
     &:nth-child(3n) {
         margin: 0 0 80px 0;
+    }
+
+    @media (max-width: 992px) {
+        width: 100%;
+        margin: 0 0 30px;
+
+        &:nth-child(3n) {
+            margin: 0;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
     }
 
     .cover {
@@ -69,7 +82,7 @@ const dataList = [
 
     .title {
         margin-top: 20px;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-family: "NotoSansTC", sans-serif;
         font-weight: 500;
         text-align: center;

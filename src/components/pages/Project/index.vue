@@ -38,7 +38,7 @@ const title = computed(() => {
     margin-top: 66px;
 
     .title {
-        font-size: 64px;
+        font-size: 4rem;
         font-family: "AbhayaLibre", sans-serif;
         font-weight: 400;
         text-align: center;
@@ -47,6 +47,10 @@ const title = computed(() => {
 
     .container {
         padding: 0 13.96% 263px;
+
+        @media (max-width: 992px) {
+            padding: 0 10% 391.16px;
+        }
     }
 }
 </style>

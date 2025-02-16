@@ -13,37 +13,44 @@
       <img 
         class="gradient-left"
         src="/assets/images/index/gradient-left.png"
+        alt="gradient-left"
       />
 
       <img 
         class="star first"
         src="/assets/images/index/star.png"
+        alt="star-first"
       />
 
       <img 
         class="star second"
         src="/assets/images/index/star.png"
+        alt="star-second"
       />
 
       <img 
         v-if="route.path === '/'"
         class="circle"
         src="/assets/images/index/circle.png"
+        alt="circle"
       />
 
       <img 
         class="gradient-right"
         src="/assets/images/index/gradient-right.png"
+        alt="gradient-right"
       />
 
       <img 
         class="star third"
         src="/assets/images/index/star.png"
+        alt="star-third"
       />
 
       <img 
         class="star fourth"
         src="/assets/images/index/star.png"
+        alt="star-fourth"
       />
     </div>
 

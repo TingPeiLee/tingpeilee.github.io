@@ -60,6 +60,10 @@ const router = useRouter();
         width: auto;
         height: 97px;
         cursor: pointer;
+
+        @media (max-width: 992px) {
+          height: 46.3px;
+        }
     }
     
     .nav-list {
@@ -71,7 +75,7 @@ const router = useRouter();
         .nav {
             position: relative;
             display: inline-block;
-            font-size: 24px;
+            font-size: 1.5rem;
             cursor: pointer;
 
             &:nth-child(1),

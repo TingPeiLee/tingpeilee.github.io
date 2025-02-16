@@ -46,9 +46,18 @@ const router = useRouter();
     position: relative;
     padding-bottom: 400px;
     display: flex;
+
+    @media (max-width: 992px) {
+        display: block;
+        padding-bottom: 300px;
+    }
     
     .left-container {
         margin: 113px 0 0 13.96%;
+
+        @media (max-width: 992px) {
+            margin: 29px 10.4% 32px;
+        }
 
         .slogan {
             font-family: "NotoSansTC", sans-serif;
@@ -56,12 +65,16 @@ const router = useRouter();
             padding: 14px 26px;
             border-radius: 5px;
             background-color: #BCD5ED;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 700;
             transform: translateX(-23px);
             letter-spacing: 2.4px;
             color: #fff;
             margin-bottom: 43px;
+
+            @media (max-width: 992px) {
+                transform: translateX(0);
+            }
         }
         
         .subtitle,
@@ -76,11 +89,11 @@ const router = useRouter();
 
             &:nth-child(2),
             &:nth-child(4) {
-                font-size: 80px;
+                font-size: 5rem;
             }
 
             &:nth-child(3) {
-                font-size: 110px;
+                font-size: 6.875rem;
             }
 
             &:nth-child(4) {
@@ -90,7 +103,7 @@ const router = useRouter();
 
         .subtitle {
             font-family: "NotoSansTC", sans-serif;
-            font-size: 20px;
+            font-size: 1.25rem;
             line-height: 35px;
             font-weight: 400;
             letter-spacing: 2px;
@@ -112,7 +125,7 @@ const router = useRouter();
 
             .text {
                 color: #fff;
-                font-size: 20px;
+                font-size: 1.25rem;
                 line-height: 20px;
                 letter-spacing: 2px;
                 font-weight: 700;
@@ -129,6 +142,11 @@ const router = useRouter();
     .cover-image {
         width: 43.125%;
         margin: 138px 0 0 4.5%;
+
+        @media (max-width: 992px) {
+            width: 79.2%;
+            margin: 0 10.4%;
+        }
     }
 }
 </style>

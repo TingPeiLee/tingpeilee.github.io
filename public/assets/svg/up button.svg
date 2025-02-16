@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 65 65">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #bcd5ed;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="20.31" y="25.19" width="24.38" height="14.62"/>
+    </clipPath>
+  </defs>
+  <circle class="cls-4" cx="32.5" cy="32.5" r="32.5"/>
+  <g class="cls-2">
+    <path class="cls-3" d="M34.49,25.99c-.33-.32-.74-.56-1.19-.69-.03,0-.06-.02-.09-.02-.06-.02-.12-.03-.19-.04-.13-.02-.27-.04-.42-.04-.06,0-.13,0-.19,0-.72,.02-1.39,.31-1.9,.8l-9.37,9.13c-1.1,1.07-1.1,2.81,0,3.89,.53,.52,1.24,.8,1.99,.8s1.46-.29,1.99-.8l7.38-7.19,7.38,7.19c.53,.52,1.24,.8,1.99,.8s1.46-.29,1.99-.8c1.1-1.07,1.1-2.81,0-3.89l-9.37-9.13Z"/>
+  </g>
+</svg>

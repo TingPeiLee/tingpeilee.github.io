@@ -50,8 +50,10 @@ for (let i = 1; i <= imageSum; i += 1) {
     .icon {
         fill: #fff;
         position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         left: 33px;
-        width: 16px;
+        width: 10px;
     }
 
     .text {

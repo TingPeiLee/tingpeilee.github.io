@@ -1,5 +1,10 @@
 <template>
-    <div class="header-container">
+    <div 
+      class="header-container"
+      :style="{
+        backgroundColor: ['/', '/resume'].indexOf(route.path) !== -1 ? '#FBF4EE' : '#F7F5F5'
+      }"
+    >
       <img
         class="logo" 
         @click="router.push('/')" 
@@ -50,11 +55,14 @@ const router = useRouter();
 
 <style lang="scss" scoped>
 .header-container {
-    position: relative;
+    position: fixed;
+    top: 0;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     padding: 1.625rem 5.3125%;
     z-index: 3;
+    box-sizing: border-box;
 
     .logo {
         width: auto;

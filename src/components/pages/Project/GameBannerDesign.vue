@@ -1,13 +1,17 @@
 <template>
     <div class="game-banner-design-container">
-        <img 
+        <div
             v-for="num in 15"
-            :key="`banner-cover-${num}`"
-            class="banner-cover"
-            :src="`/assets/images/project/game-banner-design/banner-${String(num).padStart(2, '0')}/cover.jpg`" 
-            alt="banner-cover"
+            :key="`banner-cover-${num}`" 
+            class="img-container"
             @click="router.push(`/project/game-banner-design/${num}`)"
         >
+            <img 
+                class="banner-cover"
+                :src="`/assets/images/project/game-banner-design/banner-${String(num).padStart(2, '0')}/cover.jpg`" 
+                alt="banner-cover"
+            >
+        </div>
     </div>
 </template>
 
@@ -19,14 +23,33 @@ const router = useRouter();
 
 <style lang="scss" scoped>
 .game-banner-design-container {
-    .banner-cover {
+    .img-container {
+        position: relative;
+        display: inline-block;
         width: 32.3077%;
         margin: 0 1.53845% 50px 0;
         cursor: pointer;
         border-radius: 20px;
+        padding-bottom: calc(32.3077% / 744 * 331);
+        overflow: hidden;
+
+        &:hover {
+            .banner-cover {
+                transform: scale(1.1);
+            }    
+        }
 
         &:nth-child(3n) {
             margin: 0 0 50px;
+        }
+
+        .banner-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s;
         }
     }
 }

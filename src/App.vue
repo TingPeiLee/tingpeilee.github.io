@@ -57,7 +57,12 @@
     <Header />
 
     <div class="page-container">
-      <router-view />
+      <Transition 
+        name="fade" 
+        mode="out-in"
+      >
+        <router-view />
+      </Transition>
     </div>
 
     <Footer />
@@ -156,6 +161,17 @@ const route = useRoute();
   .page-container {
     position: relative;
     z-index: 2;
+    padding-top: 149px;
   }
+}
+
+/* 進入時的動畫 */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* 進入開始時透明 */
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 </style>

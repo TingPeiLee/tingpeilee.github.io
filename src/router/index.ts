@@ -59,8 +59,17 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
+    history: createWebHistory(),
+    routes,
+    scrollBehavior(_to, _from, savedPosition) {
+        if (savedPosition) {
+            // 返回上一頁時，回到之前的滾動位置
+            return savedPosition;
+        } else {
+            // 切換路由時回到頂部
+            return { top: 0, left: 0, behavior: 'smooth' }; // `smooth` 讓滾動更平滑
+        }
+    }
 })
 
 export default router;

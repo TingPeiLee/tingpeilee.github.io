@@ -5,7 +5,12 @@
         </div>
 
         <div class="container">
-            <router-view />
+            <Transition 
+                name="fade" 
+                mode="out-in"
+            >
+                <router-view />
+            </Transition>
         </div>
     </div>
 </template>
@@ -52,5 +57,15 @@ const title = computed(() => {
             padding: 0 10% 391.16px;
         }
     }
+}
+
+/* 進入時的動畫 */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* 進入開始時透明 */
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 </style>

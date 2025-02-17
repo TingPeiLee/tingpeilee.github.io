@@ -110,7 +110,7 @@ const router = useRouter();
         }
 
         .button {
-            margin-top: 20px;
+            margin-top: 40px;
             display: inline-flex;
             border-radius: 31px;
             padding: 21px 61px;

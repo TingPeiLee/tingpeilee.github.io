@@ -2,14 +2,16 @@
     <div 
         v-for="(project, idx) in dataList"
         :key="idx"
-        class="project-container"
+        class="cover-container"
         @click="router.push(project.route)"
     >
-        <img 
-            :src="project.coverUrl" 
-            class="cover"
-            alt="cover" 
-        >
+        <div class="img-container">
+            <img 
+                :src="project.coverUrl" 
+                class="cover"
+                alt="cover" 
+            >
+        </div>
 
         <div class="title">
             {{ project.title }}
@@ -52,11 +54,19 @@ const dataList = [
 </script>
 
 <style lang="scss" scoped>
-.project-container {
+.cover-container {
     display: inline-block;
     width: 31.86%;
     margin: 0 2.21% 80px 0;
     cursor: pointer;
+
+    &:hover {
+        .img-container {
+            .cover {
+                transform: scale(1.08);
+            }
+        }
+    }
     
     &:nth-child(3n) {
         margin: 0 0 80px 0;
@@ -75,9 +85,21 @@ const dataList = [
         }
     }
 
-    .cover {
+    .img-container {
+        position: relative;
         width: 100%;
+        padding-bottom: calc(100% / 450 * 275);
         border-radius: 10px;
+        overflow: hidden;
+
+        .cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s;
+        }
     }
 
     .title {

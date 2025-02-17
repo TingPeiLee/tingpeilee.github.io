@@ -27,10 +27,11 @@
             </div>
         </div>
         
-        <img
+        <div
             class="cover-image"
-            src="/assets/images/index/computer.png"
-            alt="cover-img" 
+            :style="{
+                'background-image': 'url(/assets/images/index/computer.png)'
+            }"
         />
     </div>
 </template>
@@ -140,8 +141,12 @@ const router = useRouter();
     }
 
     .cover-image {
+        box-sizing: border-box;
+        padding-bottom: calc(43.125% / 900 * 693);
         width: 43.125%;
         margin: 138px 0 0 4.5%;
+        background-size: 100% auto;
+        height: 0;
 
         @media (max-width: 992px) {
             width: 79.2%;

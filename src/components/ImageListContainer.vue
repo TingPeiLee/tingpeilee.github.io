@@ -7,7 +7,7 @@
             :src="url" 
             alt="img"
             @click="zoomImage(idx)"
-        >
+        />
     </div>
 </template>
 

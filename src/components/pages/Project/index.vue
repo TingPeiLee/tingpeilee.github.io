@@ -42,19 +42,28 @@ const title = computed(() => {
 .project-container {
     margin-top: 66px;
 
+    @media (max-width: 992px) {
+        margin-top: 0;
+    }
+
     .title {
         font-size: 4rem;
         font-family: "AbhayaLibre", sans-serif;
         font-weight: 400;
         text-align: center;
         margin-bottom: 69px;
+
+        @media (max-width: 992px) {
+            font-size: 3rem;
+            margin-bottom: 29px;
+        }
     }
 
     .container {
         padding: 0 13.96% 263px;
 
         @media (max-width: 992px) {
-            padding: 0 10% 391.16px;
+            padding: 0 10% 91.16px;
         }
     }
 }

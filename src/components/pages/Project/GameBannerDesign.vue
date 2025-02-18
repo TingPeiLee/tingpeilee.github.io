@@ -33,6 +33,16 @@ const router = useRouter();
         padding-bottom: calc(32.3077% / 744 * 331);
         overflow: hidden;
 
+        @media (max-width: 992px) {
+            width: 100%;
+            padding-bottom: calc(100% / 744 * 331);
+            margin: 0 0 30px;
+
+            &:nth-child(3n) {
+                margin: 0 0 30px;
+            }
+        }
+
         &:hover {
             .banner-cover {
                 transform: scale(1.1);

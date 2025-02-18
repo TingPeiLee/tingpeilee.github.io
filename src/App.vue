@@ -102,9 +102,18 @@ const route = useRoute();
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     overflow: hidden;
     z-index: 1;
+
+    @media (max-width: 1680px) {
+      width: 1920px;
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
 
     .gradient-left {
       position: absolute;
@@ -162,6 +171,10 @@ const route = useRoute();
     position: relative;
     z-index: 2;
     padding-top: 149px;
+
+    @media (max-width: 992px) {
+      padding-top: 98px;
+    }
   }
 }
 

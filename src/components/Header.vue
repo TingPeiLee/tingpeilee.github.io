@@ -69,6 +69,10 @@ const router = useRouter();
         height: 97px;
         cursor: pointer;
 
+        @media (max-width: 1680px) {
+          height: 70px;
+        }
+
         @media (max-width: 992px) {
           height: 46.3px;
         }
@@ -86,9 +90,25 @@ const router = useRouter();
             font-size: 1.5rem;
             cursor: pointer;
 
+            @media (max-width: 992px) {
+              font-size: 1.2rem;
+            }
+
+            @media (max-width: 375px) {
+              font-size: 1rem;
+            }
+
             &:nth-child(1),
             &:nth-child(2) {
               margin-right: 56px;
+
+              @media (max-width: 992px) {
+                margin-right: 20px;
+              }
+
+              @media (max-width: 375px) {
+                margin-right: 10px;
+              }
             }
 
             &::after {

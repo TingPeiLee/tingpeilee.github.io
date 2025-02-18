@@ -48,10 +48,22 @@ onBeforeUnmount(() => {
     cursor: pointer;
     z-index: 4;
 
+
+    @media (max-width: 922px) {
+        width: 35px;
+        height: 35px;
+        bottom: 25px;
+        right: 25px;
+    }
+
     .icon {
         fill: #fff;
         transform: rotate(90deg);
         width: 14.63px;
+
+        @media (max-width: 922px) {
+            width: 8px;
+        }
     }
 }
 </style>

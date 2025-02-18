@@ -46,6 +46,7 @@
     box-sizing: border-box;
 
     @media (max-width: 992px) {
+        position: relative;
         display: block;
         text-align: center;
     }

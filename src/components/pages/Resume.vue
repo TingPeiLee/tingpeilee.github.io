@@ -112,20 +112,28 @@
 .resume-container {
     margin-top: 66px;
 
+    @media (max-width: 992px) {
+        margin-top: 0px;
+    }
+
     > .title {
         font-size: 4rem;
         font-family: "AbhayaLibre", sans-serif;
         font-weight: 400;
         text-align: center;
         margin-bottom: 69px;
+
+        @media (max-width: 992px) {
+            font-size: 3rem;
+            margin-bottom: 29px;
+        }
     }
 
     .container {
         padding: 0 17.71% 263px;
 
-
         @media (max-width: 992px) {
-            padding: 0 11.2% 400px;
+            padding: 0 11.2% 78.67px;
         }
 
         .title {
@@ -141,6 +149,10 @@
                     font-size: 2.8125rem;
                     line-height: 45px;
                     margin-bottom: 25px;
+
+                    @media (max-width: 992px) {
+                        margin-top: 19px;
+                    }
                 }
             }
 
@@ -166,6 +178,15 @@
             line-height: 36px;
             letter-spacing: 1.08px;
 
+            @media (max-width: 992px) {
+                line-height: 30px;
+
+                .break {
+                    width: 100%;
+                    height: 30px;
+                }
+            }
+
             .break {
                 width: 100%;
                 height: 36px;
@@ -182,8 +203,15 @@
             &:first-child {
                 margin-bottom: 115px;
 
+                .right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 @media (max-width: 992px) {
                     flex-direction: column;
+                    margin-bottom: 36px;
 
                     .right {
                         order: 1;
@@ -191,6 +219,14 @@
 
                     .left {
                         order: 2;
+                    }
+                }
+            }
+
+            @media (max-width: 992px) {
+                &:last-child {
+                    .right {
+                        margin-top: 36px;
                     }
                 }
             }
@@ -208,25 +244,33 @@
             }
 
             .left {
-                width: 61.37%;
-                padding-right: 26.02%;
+                width: 60.4%;
+                padding-right: 26.43%;
+                box-sizing: border-box;
+
+                @media (max-width: 992px) {
+                    padding-right: 0;
+                }
             }
 
             .right {
-                width: 38.63%;
+                width: 39.6%;
 
                 .profile-image {
                     width: 89.35%;
 
                     @media (max-width: 992px) {
-                        width: 80%;
-                        margin: 0 10% 19px;
+                        width: 76.9%;
                     }
                 }
             }
 
             .title-container {
                 margin-bottom: 20px;
+
+                @media (max-width: 992px) {
+                    margin-bottom: 36px;
+                }
 
                 .title {
                     display: inline-block;

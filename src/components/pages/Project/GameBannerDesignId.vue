@@ -47,6 +47,11 @@ for (let i = 1; i <= imageSum; i += 1) {
     background-color: #D8BBB7;
     cursor: pointer;
 
+    @media (max-width: 992px) {
+        margin-top: 45px;
+        padding: 10px 40px;
+    }
+
     .icon {
         fill: #fff;
         position: absolute;
@@ -54,13 +59,22 @@ for (let i = 1; i <= imageSum; i += 1) {
         transform: translateY(-50%);
         left: 33px;
         width: 10px;
+
+        @media (max-width: 992px) {
+            width: 5px;
+            left: 18px;
+        }
     }
 
     .text {
         color: #fff;
         font-family: "NotoSansTC", sans-serif;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 1.25rem;
+
+        @media (max-width: 992px) {
+            // font-size: 10px;
+        }
     }
 }
 </style>

@@ -50,11 +50,15 @@ const router = useRouter();
 
     @media (max-width: 992px) {
         display: block;
-        padding-bottom: 300px;
+        padding-bottom: 55px;
     }
     
     .left-container {
         margin: 113px 0 0 13.96%;
+
+        @media (max-width: 1680px) {
+            margin: 80px 0 0 13.96%;
+        }
 
         @media (max-width: 992px) {
             margin: 29px 10.4% 32px;
@@ -74,7 +78,10 @@ const router = useRouter();
             margin-bottom: 43px;
 
             @media (max-width: 992px) {
+                font-size: 1.154rem;
+                padding: 10px 17px;
                 transform: translateX(0);
+                margin-bottom: 20px;
             }
         }
         
@@ -91,14 +98,27 @@ const router = useRouter();
             &:nth-child(2),
             &:nth-child(4) {
                 font-size: 5rem;
+
+                @media (max-width: 992px) {
+                    font-size: 3rem;
+                    line-height: 5rem;
+                }
             }
 
             &:nth-child(3) {
                 font-size: 6.875rem;
+
+                @media (max-width: 992px) {
+                    font-size: 3.46rem;
+                }
             }
 
             &:nth-child(4) {
                 margin-bottom: 20px;
+
+                @media (max-width: 992px) {
+                    margin-bottom: 10px;
+                }
             }
         }
 
@@ -108,6 +128,11 @@ const router = useRouter();
             line-height: 35px;
             font-weight: 400;
             letter-spacing: 2px;
+
+            @media (max-width: 992px) {
+                line-height: 25px;
+                font-size: 0.92rem;
+            }
         }
 
         .button {
@@ -117,6 +142,11 @@ const router = useRouter();
             padding: 21px 61px;
             background-color: #D8BBB7;
             cursor: pointer;
+
+            @media (max-width: 992px) {
+                margin-top: 32px;
+                padding: 12px 27px 12px 27px;
+            }
 
             &:hover {
                 .icon {
@@ -131,11 +161,19 @@ const router = useRouter();
                 letter-spacing: 2px;
                 font-weight: 700;
                 margin-right: 6px;
+
+                @media (max-width: 992px) {
+                    font-size: 1.077rem;
+                }
             }
 
             .icon {
                 width: 17px;
                 transition: transform 0.1s;
+
+                @media (max-width: 992px) {
+                    width: 13px;
+                }
             }
         }
     }
@@ -148,8 +186,14 @@ const router = useRouter();
         background-size: 100% auto;
         height: 0;
 
+        @media (max-width: 1680px) {
+            padding-bottom: calc(43% / 900 * 693);
+            width: 43%;
+        }
+
         @media (max-width: 992px) {
             width: 79.2%;
+            padding-bottom: calc(79.2% / 900 * 693);
             margin: 0 10.4%;
         }
     }
